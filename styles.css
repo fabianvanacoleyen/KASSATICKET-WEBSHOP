@@ -1,7 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Voorkomt scrollbalken */
     height: 100%;
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
@@ -84,4 +83,40 @@ body, html {
 
   .collectie{
     padding-left: 5%;
+  }
+
+  .collection-cards {
+    /* Add shadows to create the "card" effect */
+    width: 320px;
+    height: 375px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.36);
+    transition: 0.1s;
+    border-radius: 25px;
+    text-align: center;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .collection-cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(26, 124, 57, 0.767);
+  }
+  
+  /* Add some padding inside the card container */
+  .collection-cards-inside {
+    padding: 16px;
+  }
+
+  .bestel-knop{
+    outline: none;
+    border: none;
+    border-radius: 90px;
+    background-color: rgb(174, 241, 126);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    width: 90%;
+    font-weight:500;
+  }
+
+  .bestel-knop:hover{
+    background-color: #27f7df;
   }
