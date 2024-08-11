@@ -12,7 +12,6 @@ body, html {
 .container {
     display: flex;
     width: 100%;
- 
     position: relative;
     overflow: hidden;
   }
@@ -20,20 +19,16 @@ body, html {
   .image-track {
     display: flex;
     width: calc(200%); /* Verdubbelde breedte om het herhalende effect te creëren */
-    animation: scroll 2s linear infinite;
+    animation: scroll 3s linear infinite;
   }
-  
-  .img {
-    width: 20vw; /* Pas de breedte aan naar wens */
-    flex-shrink: 0;
-  }
+
   
   @keyframes scroll {
-    100% {
-      transform: translateX(0);
-    }
     0% {
       transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 
@@ -42,7 +37,7 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Licht transparant wit */
+    background: rgba(0, 0, 0, 0.641); /* Licht transparant wit */
     backdrop-filter: blur(10px); /* Blur effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduw om de navbar meer op te laten vallen */
     z-index: 1000; /* Zorg ervoor dat de navbar boven andere elementen staat */
@@ -57,7 +52,7 @@ body, html {
   
   .navbar-logo {
     font-size: 1.5rem;
-    color: #333;
+    color: #d1cbcb;
     text-decoration: none;
   }
   
@@ -74,13 +69,13 @@ body, html {
   
   .navbar-menu a {
     text-decoration: none;
-    color: #333;
+    color: #d1cbcb;
     font-size: 1rem;
     transition: color 0.3s;
   }
   
   .navbar-menu a:hover {
-    color: #007bff; /* Hover kleur */
+    color: #f689f6; /* Hover kleur */
   }
   
   main {
