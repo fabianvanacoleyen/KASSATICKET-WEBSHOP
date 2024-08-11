@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Voorkomt scrollbalken */
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+ 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-track {
+    display: flex;
+    width: calc(200%); /* Verdubbelde breedte om het herhalende effect te creëren */
+    animation: scroll 2s linear infinite;
+  }
+  
+  .img {
+    width: 20vw; /* Pas de breedte aan naar wens */
+    flex-shrink: 0;
+  }
+  
+  @keyframes scroll {
+    100% {
+      transform: translateX(0);
+    }
+    0% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Licht transparant wit */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduw om de navbar meer op te laten vallen */
+    z-index: 1000; /* Zorg ervoor dat de navbar boven andere elementen staat */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menu a:hover {
+    color: #007bff; /* Hover kleur */
+  }
+  
+  main {
+    padding: 60px 0px; /* Zorg ervoor dat de content niet onder de navbar valt */
+  }
