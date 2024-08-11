@@ -81,3 +81,7 @@ body, html {
   main {
     padding: 60px 0px; /* Zorg ervoor dat de content niet onder de navbar valt */
   }
+
+  .collectie{
+    padding-left: 5%;
+  }
