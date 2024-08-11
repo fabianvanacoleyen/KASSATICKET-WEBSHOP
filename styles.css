@@ -3,6 +3,10 @@ body, html {
     padding: 0;
     overflow: hidden; /* Voorkomt scrollbalken */
     height: 100%;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
 }
 
 .container {
